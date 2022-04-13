@@ -6,6 +6,8 @@ def ping_pong(number)
   original_array.each do |index|
     if index.%(3).eql?(0)
       new_array.push('ping')
+    elsif index.%(5).eql?(0)
+      new_array.push('pong')    
     else 
       new_array.push(index)  
     end

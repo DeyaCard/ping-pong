@@ -9,7 +9,13 @@ end
 
 describe('#ping_pong') do
   it("returns all numbers divisble by 3 are replaced with 'ping'") do
-    expect(ping_pong(6)).to(eq([1,2,'ping',4,5,'ping']))
+    expect(ping_pong(6)).to(eq([1,2,'ping',4,'pong','ping']))
+  end
+end 
+
+describe('#ping_pong') do
+  it("returns all numbers divisble by 5 are replaced with 'pong'") do
+    expect(ping_pong(6)).to(eq([1,2,'ping',4,'pong','ping']))
   end
 end   
 
