@@ -4,7 +4,11 @@ def ping_pong(number)
   original_array = (1..number).to_a
   new_array = []
   original_array.each do |index|
-    if index.%(3).eql?(0)
+    # if index % 3 == 0 && index % 5 == 0
+    # if index.%(3) && index.%(5).eql?(0)
+    if index.%(15).eql?(0)
+      new_array.push('ping pong')
+    elsif index.%(3).eql?(0)
       new_array.push('ping')
     elsif index.%(5).eql?(0)
       new_array.push('pong')    
@@ -26,3 +30,7 @@ end
 # Rough Draft: if (number % 3)
 #                 number = 'ping'
 #              end
+
+# Test 4 Notes
+# Pseudocode: if number is divisible by 3 and 5 replace with ping pong
+# Rough Draft:
